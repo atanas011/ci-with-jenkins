@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite thread-count="2" verbose="1" name="Parallel Test Suite"
+       annotations="JDK" parallel="tests">
+    <!-- From IDE run this file -->
+    <test name="GoogleTest">
+        <classes>
+            <class name="tests.GoogleTest"/>
+        </classes>
+    </test>
+    <!-- Tests execute A > Z -->
+    <test name="HerokuTest">
+        <classes>
+            <class name="tests.HerokuTest"/>
+        </classes>
+    </test>
+</suite>
